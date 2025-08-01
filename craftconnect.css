@@ -1,0 +1,332 @@
+/* === CraftConnect Modern Palette === */
+:root {
+  --primary-bg: #F5F5F5;
+  --secondary-text: #333333;
+  --accent1: #00ADB5;
+  --accent2: #FFD24C;
+  --accent2-hover: #FF8C42;
+  --card-bg: #fff;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--primary-bg);
+  color: var(--secondary-text);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, .section-title {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--secondary-text);
+  margin-top: 0;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: var(--accent1);
+  letter-spacing: 0.5px;
+}
+
+.navbar {
+  background: var(--card-bg);
+  color: var(--secondary-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #eee;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-craft { color: var(--secondary-text); background: var(--primary-bg); padding: 0 0.2em; border-radius: 5px 0 0 5px; }
+.logo-connect { color: var(--accent1); background: var(--primary-bg); padding: 0 0.2em; border-radius: 0 5px 5px 0; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+.nav-links a {
+  color: var(--secondary-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.3em 0.7em;
+  border-radius: 6px;
+}
+.nav-links a:hover, .nav-links a:focus {
+  color: var(--accent1);
+  background: #e0f7fa;
+  outline: none;
+}
+
+.hero {
+  background: var(--accent1);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+  position: relative;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+.hero-cta, .accent-btn, .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: var(--accent1);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0,173,181,0.07);
+  cursor: pointer;
+  text-align: center;
+}
+.hero-cta:hover, .hero-cta:focus, .accent-btn:hover, .accent-btn:focus, .btn:hover, .btn:focus {
+  background: var(--accent2);
+  color: var(--secondary-text);
+  outline: none;
+}
+
+.products-section, .artisans-section, .register-section, .cart-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+.products-section h2, .artisans-section h2, .register-section h2, .cart-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-text);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+.product-card, .artisan-profile, .register-section, .cart-section {
+  background: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,173,181,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #eee;
+  padding: 2rem;
+}
+.product-card:hover, .product-card:focus-within, .artisan-profile:hover, .artisan-profile:focus-within {
+  box-shadow: 0 8px 32px rgba(0,173,181,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #e0f7fa;
+}
+.product-info {
+  padding: 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product-title { font-size: 1.1rem; font-weight: bold; }
+.product-description { font-size: 0.98rem; }
+.product-category {
+  background: var(--accent1);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.1em 0.6em;
+  font-size: 0.85em;
+  margin-left: 0.5em;
+}
+.artisan-link a { color: var(--accent1); text-decoration: underline; }
+.product-price { font-size: 1.2rem; font-weight: bold; color: var(--accent2); margin-top: 0.5rem; }
+
+/* Highlight tags */
+.highlight-tag, .new-arrival {
+  display: inline-block;
+  background: var(--accent2);
+  color: var(--secondary-text);
+  font-weight: 600;
+  font-size: 0.95em;
+  border-radius: 12px;
+  padding: 0.2em 0.9em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  letter-spacing: 0.5px;
+  border: 1.5px solid var(--accent2-hover);
+}
+
+.testimonials-section {
+  background: #f7f7f7;
+  padding: 3rem 0 2rem 0;
+}
+.testimonials-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.testimonial-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,173,181,0.08);
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  min-width: 240px;
+  font-size: 1.08rem;
+  color: var(--secondary-text);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.testimonial-card:hover, .testimonial-card:focus-within {
+  box-shadow: 0 6px 24px rgba(0,173,181,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.testimonial-author {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--accent1);
+  font-size: 1rem;
+}
+
+.newsletter-section {
+  background: var(--card-bg);
+  padding: 2.5rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,173,181,0.07);
+  max-width: 500px;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+}
+.newsletter-form {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+.newsletter-form input[type="email"] {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #e1e1e1;
+  font-size: 1rem;
+  min-width: 220px;
+  transition: border-color 0.2s;
+}
+.newsletter-form input[type="email"]:focus {
+  outline: 2px solid var(--accent1);
+  border-color: var(--accent1);
+  background: #e0f7fa;
+}
+.newsletter-form button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent1);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.newsletter-form button:hover, .newsletter-form button:focus {
+  background: var(--accent2);
+  color: var(--secondary-text);
+  outline: none;
+}
+
+/* Visually Hidden */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 2.5rem 0 1.2rem 0;
+  margin-top: 3rem;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-size: 1.1rem;
+  background: var(--primary-bg);
+}
+.footer-text {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.footer-links {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.footer-links a {
+  color: var(--accent2);
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-links a:hover, .footer-links a:focus {
+  color: var(--accent2-hover);
+  text-decoration: underline;
+  outline: none;
+}
+.footer-contact {
+  color: #fff;
+  font-size: 0.98rem;
+  margin-top: 0.5rem;
+}
+.footer-contact a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.footer-contact a:hover, .footer-contact a:focus {
+  color: var(--accent2-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .products-section, .artisans-section { padding: 2rem 0.5rem; }
+}
+@media (max-width: 900px) {
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .product-detail-section, .artisan-profile { flex-direction: column; align-items: flex-start; }
+  .artisans-section { padding: 1rem; }
+  .artisan-profile { padding: 1.2rem; }
+  .artisan-photo { margin-bottom: 1rem; }
+}
+@media (max-width: 600px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .navbar { flex-direction: column; gap: 1rem; }
+  .product-detail-section, .artisan-profile, .register-section, .cart-section, .artisans-section, .products-section { padding: 1rem; }
+  .footer-content { padding: 1.2rem 0 0.7rem 0; }
+}
+
+/* End of CraftConnect CSS */
