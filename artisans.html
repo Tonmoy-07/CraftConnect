@@ -3,23 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artisans - CraftConnect</title>
+  <title>CraftConnect - Artisans</title>
   <link rel="stylesheet" href="craftconnect.css">
 </head>
 <body>
-  <section id="artisan-ravi" class="artisan-profile">
-    <h2>Ravi Kumar</h2>
-    <!-- Artisan details here -->
-  </section>
-
-  <section id="artisan-priya" class="artisan-profile">
-    <h2>Priya Devi</h2>
-    <!-- Artisan details here -->
-  </section>
-
-  <section id="artisan-sunita" class="artisan-profile">
-    <h2>Sunita Mandal</h2>
-    <!-- Artisan details here -->
-  </section>
+  <nav class="navbar" aria-label="Main Navigation">
+    <a href="index.html" class="logo" aria-label="CraftConnect Home">
+      <span class="logo-craft">Craft</span><span class="logo-connect">Connect</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="artisans.html">Artisans</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="cart.html" class="cart-link">Cart</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="artisans" class="artisans-section" aria-labelledby="artisans-heading">
+      <h2 id="artisans-heading">Meet the Artisans</h2>
+      <p class="section-intro">Our artisans pour their heart and heritage into every creation. Learn more about their stories and crafts below.</p>
+      <div class="artisan-profile" id="artisan-priya">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="Priya Devi" class="artisan-photo">
+        <div>
+          <h3>Priya Devi</h3>
+          <div class="artisan-location">Ranchi, Jharkhand</div>
+          <div class="artisan-bio">“I learned the art of handloom weaving from my mother and grandmother. Every saree I create tells a story of our culture and the dreams of women in my village.”</div>
+        </div>
+      </div>
+      <div class="artisan-profile" id="artisan-ravi">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b" alt="Ravi Kumar" class="artisan-photo">
+        <div>
+          <h3>Ravi Kumar</h3>
+          <div class="artisan-location">Dumka, Jharkhand</div>
+          <div class="artisan-bio">“Wood carving is my family’s tradition. Each mask I create is inspired by the stories and folklore of our region, keeping our heritage alive for the next generation.”</div>
+        </div>
+      </div>
+      <div class="artisan-profile" id="artisan-sunita">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Sunita Mandal" class="artisan-photo">
+        <div>
+          <h3>Sunita Mandal</h3>
+          <div class="artisan-location">Deoghar, Jharkhand</div>
+          <div class="artisan-bio">“Pottery is not just my work, it’s my passion. I love shaping clay into beautiful, useful pieces that bring a touch of tradition into modern homes.”</div>
+        </div>
+      </div>
+      <div class="artisan-profile" id="artisan-mohan">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Mohan Singh" class="artisan-photo">
+        <div>
+          <h3>Mohan Singh</h3>
+          <div class="artisan-location">Chaibasa, Jharkhand</div>
+          <div class="artisan-bio">“Jewelry making is my lifelong passion. I blend tribal motifs with modern designs to create pieces that celebrate our culture.”</div>
+        </div>
+      </div>
+      <div class="artisan-profile" id="artisan-anita">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657" alt="Anita Das" class="artisan-photo">
+        <div>
+          <h3>Anita Das</h3>
+          <div class="artisan-location">Hazaribagh, Jharkhand</div>
+          <div class="artisan-bio">“Bamboo weaving is a tradition in my family. Each basket I make is a blend of utility and art, crafted with care for homes around the world.”</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>© 2025 CraftConnect. Empowering artisans, connecting cultures.</div>
+      <nav class="footer-links" aria-label="Footer Links">
+        <a href="products.html">Products</a> |
+        <a href="artisans.html">Artisans</a> |
+        <a href="register.html">Register</a> |
+        <a href="cart.html">Cart</a>
+      </nav>
+      <div class="footer-contact">Contact: <a href="mailto:support@craftconnect.com">support@craftconnect.com</a></div>
+    </div>
+  </footer>
 </body>
-</html>
+</html> 
