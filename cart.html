@@ -21,22 +21,37 @@
   </nav>
   <main>
     <section id="cart" class="cart-section" aria-labelledby="cart-heading">
-      <h2 id="cart-heading">Your Cart</h2>
+      <h2 id="cart-heading" class="section-title">Your Cart</h2>
       <div class="cart-items">
         <div class="cart-item">
-          <span>Handwoven Silk Saree</span>
-          <span>Qty: 1</span>
-          <span>₹4,500</span>
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="Handwoven Silk Saree" class="cart-item-image">
+          <div class="cart-item-details">
+            <span class="cart-item-title">Handwoven Silk Saree</span>
+            <span class="cart-item-artisan">By Priya Devi</span>
+            <div class="cart-item-qty">
+              <button class="qty-btn">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn">+</button>
+            </div>
+          </div>
+          <span class="cart-item-price">₹4,500</span>
+          <button class="remove-btn" title="Remove item">&times;</button>
         </div>
-        <!-- More items could go here -->
+        <!-- More items can go here -->
       </div>
       <div class="cart-summary">
-        <span>Subtotal: ₹4,500</span>
-        <span>Shipping: ₹200</span>
-        <span>Total: ₹4,700</span>
+        <div class="cart-summary-row"><span>Subtotal</span><span>₹4,500</span></div>
+        <div class="cart-summary-row"><span>Shipping</span><span>₹200</span></div>
+        <div class="cart-summary-row cart-summary-total"><span>Total</span><span>₹4,700</span></div>
+        <button class="btn accent-btn checkout-btn">Proceed to Checkout</button>
+        <p class="cart-empty-message" style="display:none;">Your cart is empty. Start shopping to add items!</p>
       </div>
-      <button class="btn accent-btn">Checkout with PayPal</button>
-      <p class="cart-empty-message" style="display:none;">Your cart is empty. Start shopping to add items!</p>
+      <div class="cart-payment-options">
+        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" class="payment-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="payment-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="payment-logo">
+        <!-- Add more payment logos as needed -->
+      </div>
     </section>
   </main>
   <footer>
